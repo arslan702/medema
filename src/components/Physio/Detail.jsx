@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import Banner from '../Common/Banner'
 import { FaCheckCircle, FaCaretDown } from "react-icons/fa";
 import Image from 'next/image'
