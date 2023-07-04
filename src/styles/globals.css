@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+@font-face {
+  font-family: 'barlowregular';
+  src: url('./fonts/barlow-regular-webfont.woff2') format('woff2'),
+       url('./fonts/barlow-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'poppinsregular';
+  src: url('./fonts/poppins/poppins-regular-webfont.woff2') format('woff2'),
+       url('./fonts/poppins/poppins-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family:'barlowregular';
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+    background-color: #f1f6f9;
+}
+.parent{
+  background-image: url('../../public//images/bg-login.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.parent1{
+  background-image: url('../../public//images/bg-signUp.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+/* .parent3{
+  background-image: url('../../public//images/parnet3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+/* @media screen and (max-width :450px) {
+  .parent3{
+  background-image: url('../../public//images/parnet3.1.png');
+    background-size: cover;
+  }
+} */
+.parent4{
+  background-image: url('../../public//images/bg.png');
+background-repeat: repeat;
+background-size: contain;
+}
